@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(217, 54%, 11%);
+    font-family: 'Outfit', sans-serif;
+    color: hsl(0, 0%, 100%);
+}
+p{
+    color: hsl(215, 51%, 70%);
+    opacity: 0.8;
+    font-size: 18px;
+}
+div.container{
+    margin: 50% auto;
+    width: 50%;
+    height: 80%;
+    background-color: hsl(216, 50%, 16%);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+div.container > div.nft-main{
+    width: 100%;
+}
+div.container > div.nft-main > figure > img{
+    width: 100%;
+    border-radius: 5px;
+}
+div.container > div.nft-description{
+    padding: 1rem 0;
+}
+div.container > div.nft-description > header > h2{
+    font-weight: 600;
+}
+div.container > div.nft-description > p{
+    margin: 1rem 0;
+    opacity: 0.7;
+}
+div.container > div.nft-description > div.nft-details{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid hsl(215, 32%, 27%);
+    padding-bottom: 1rem;
+}
+div.container > div.nft-description > div.nft-details > div.nft-name{
+    display: flex;
+    gap: 0.5rem;
+}
+div.container > div.nft-description > div.nft-details > div.nft-name > p{
+    color: hsl(178, 100%, 50%);
+    font-weight: 600;
+}
+div.container > div.nft-description > div.nft-details > div.nft-duration{
+    display: flex;
+    gap: 0.5rem;
+}
+div.container > div.nft-description > div.nft-author{
+    display: flex;
+    padding: 1rem 0;
+    gap: 1rem;
+}
+div.container > div.nft-description > div.nft-author > img{
+    width: 10%;
+    border-radius: 999px;
+    border: 1px solid hsl(0, 0%, 100%);
+}
+div.container > div.nft-description > div.nft-author > p{
+    margin-top: 5px;
+    color: hsl(0, 0%, 100%);
+}
+div.container > div.nft-description > div.nft-author > p > span{
+    color: hsl(215, 51%, 70%);
+}
+.attribution { 
+    font-size: 16px; text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+}
+
+/**********MEDIA QUERY********/
+@media screen and (max-width: 400px) {
+    p{
+        font-size: small;
+    }
+    div.container > div.nft-description div.nft-details{
+        gap: 0.75rem;
+    }
+    div.container > div.nft-description div.nft-details > div.nft-name > img{
+        width: 10%;
+    }
+    div.container > div.nft-description div.nft-details > div.nft-name{
+        gap: 0.1rem;
+    }
+    div.container > div.nft-description div.nft-details > div.nft-duration{
+        gap: 0.1rem;
+    }
+    div.container > div.nft-description div.nft-details > div.nft-duration > img{
+        width: 10%;
+    }
+    div.container > div.nft-description > div.nft-author > img{
+        width: 20%;
+    }
+}
